@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="format-detection" content="telephone=no, email=no" />
+  <meta http-equiv="Cache-control" content="max-age=129600" />
+  <title>parcel-try</title>
+  <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+  <script type="text/javascript">
+   if ('addEventListener' in document) {
+      document.addEventListener('DOMContentLoaded', function() {
+        FastClick.attach(document.body);
+      }, false);
+    }
+    if(!window.Promise) {
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+    }
+    (function (win,doc) {
+      function setSize() {
+        doc.documentElement.style.fontSize=20*document.documentElement.clientWidth/375+'px';
+      }
+      setSize();
+       win.addEventListener('resize',setSize,false)
+    })(window,document)
+  </script>
+</head>
+<body>
+  <div class="root" id="root"></div>
+  <script src="./index.js"></script>
+</body>
+</html>
