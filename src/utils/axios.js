@@ -11,10 +11,10 @@ import $Utils from './index'
 import { Toast }from 'antd-mobile'
 
 // 配置API接口地址
-const root = 'http://dev.fenxianglife.com/njia-cms/';
-const dev_host='dev.fenxianglife.com';
-const prod_host='prod.fenxianglife.com';
-const cur_host = process.env.NODE_ENV==='development'?dev_host:prod_host
+const root = 'http://dev.nihao.com/';
+//const dev_host='dev.nihao.com';
+//const prod_host='prod.nihao.com';
+//const cur_host = process.env.NODE_ENV==='development'?dev_host:prod_host
 
 /*
   接口处理函数
